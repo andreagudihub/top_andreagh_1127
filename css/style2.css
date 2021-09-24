@@ -1,0 +1,228 @@
+:root{
+	--light_pink:#fdebe9;
+	--strong_pink:#ec7a96;
+	--soft_color:#f5b4c9;;
+	--accent_red:#c72230;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Josefin Sans', sans-serif;
+}
+h1,h2,h3,h4{
+	font-family: 'Yeseva One', cursive;
+}
+header{
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+.logo_header{
+	grid-column: 2;
+	grid-row: 1;
+	padding: 10px;
+	justify-self: center;
+}
+.full_logo{
+	display:none;
+}
+.logo_icono{
+	max-width: 130px;
+}
+nav{
+	background-color: #ec7a96;
+	grid-column: 1/4;
+	display: grid;
+}
+.nav_bar{
+	display: none;
+}
+.menu{
+	align-self: center;
+}
+.menu>img{
+	margin-left: 5px;
+}
+.menu:hover>.nav_bar{
+	display: list-item;
+}
+.nav_bar>ul>li{
+	color: var(--light_pink);
+	list-style: none;
+	text-align: left;
+	margin:1em;		
+}
+.brief_presentation{
+	background-color: var(--light_pink);
+	display:grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 120px repeat(3, 1fr);
+	grid-gap: 5%;
+	padding:5%;
+}
+.brief_presentation>img{
+	max-width: 120px;
+	border-radius: 150px;
+	grid-column: 1/3;
+	justify-self: center;
+	grid-row: 1/4;
+}
+.brief_presentation>h1,
+.brief_presentation>p{
+	align-self: center;
+	color: var(--strong_pink);
+}
+.brief_presentation>h1{
+	font-size: 1em;
+	grid-column: 1/3;
+	grid-row: 2/3;
+	justify-self: center;
+}
+.brief_presentation>p{
+	grid-column: 1/3;
+	grid-row: 3/4;
+}
+.brief_presentation>div{
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+/*Botón que lleva de "conoceme" a "quien_soy.html"*/
+.small_button{
+	background-color: var(--strong_pink);
+	border-radius: 8px;
+	box-sizing: border-box;
+	width: 8em;
+	height: 2em;
+	justify-self: right;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	margin-right: 5px;	
+}
+.small_button>a,
+.small_button>a:visited{
+	color: var(--light_pink);
+	text-decoration: none;
+	align-self: center;
+}
+.small_button:hover{
+	background-color: var(--soft_color);
+}
+/*Banner para dividir secciones*/
+.quote_banner{
+	background-color: var(--strong_pink);
+	padding:1em;
+	margin-top: 1em;
+}
+.quote_banner>h2{
+	color:var(--light_pink);
+	text-align: center;
+}
+.recent_work{
+	display: grid;
+	justify-content: center;
+	grid-template-rows: 3em repeat(3, 1fr);
+	grid-template-columns: 1;
+	grid-gap: 1em;
+	margin-top: 1em;
+}
+.recent_work>h1{
+	color:var(--strong_pink);
+	text-align: center;
+	align-self: center;
+}
+.nombre_proyecto1>span,
+.nombre_proyecto2>span,
+.nombre_proyecto3>span{
+	display: none;
+}
+.recent_work>div,
+.recent_work>img{
+	grid-column: 1/2;
+}
+.recent_work>:nth-child(3){
+	grid-row: 2/3;
+}
+.recent_work>:nth-child(5){
+	grid-row: 3/4;
+}
+.recent_work>:nth-child(7){
+	grid-row: 4/5;
+}
+.recent_work>.nombre_proyecto1,
+.recent_work>.nombre_proyecto2,
+.recent_work>.nombre_proyecto3{
+	background-color: var(--light_pink);
+	display: flex;
+	justify-content: center;
+	opacity: 50%;
+}
+.recent_work>.nombre_proyecto1{
+	grid-row: 2/3;
+}
+.recent_work>.nombre_proyecto2{
+	grid-row: 3/4;
+}
+.recent_work>.nombre_proyecto3{
+	grid-row: 4/5;
+}
+.recent_work>.nombre_proyecto1:hover,
+.recent_work>.nombre_proyecto2:hover,
+.recent_work>.nombre_proyecto3:hover{
+	display: none;
+}
+footer{
+		background-color: var(--light_pink);
+		color: var(--strong_pink) ;
+		margin-top: 2em;
+		padding:2em;
+		display: grid;
+		grid-template-rows: 50% 50%;
+		justify-content: center;
+}
+.social_media{
+		justify-self: center;
+		text-align: center;
+}
+@media screen and (min-width:421px) {
+
+}
+@media screen and (min-width:721px) {
+	.full_logo{
+		display:block;
+		max-width: 300px;
+	}
+	.logo_icono{
+		display: none;
+	}
+	nav{
+		justify-content: center;
+		margin-top: 10px;
+	}
+	.nav_bar{
+		display: inline;
+	}
+	.nav_bar>ul{
+		display: flex;
+	}
+	.menu>img{
+		display: none;
+	}
+	.brief_presentation{
+		border-top-left-radius: 300px;
+		border-bottom-left-radius: 300px;
+		display:grid;
+		grid-template-columns: 40% 60%;
+		grid-template-rows: 30% 40% 30%;
+		margin-left: 10%;
+		
+	}
+	.brief_presentation>img{
+		min-width: 300px;
+		grid-column: 1/2;
+		align-self: center;
+	}
+}
