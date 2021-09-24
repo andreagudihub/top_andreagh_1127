@@ -1,3 +1,5 @@
+@media (min-width:320px) {
+	
 :root{
 	--light_pink:#fdebe9;
 	--strong_pink:#ec7a96;
@@ -60,7 +62,7 @@ nav{
 	display:grid;
 	grid-template-columns: 50% 50%;
 	grid-template-rows: 120px repeat(3, 1fr);
-	grid-gap: 5%;
+	grid-gap: 10px;
 	padding:5%;
 }
 .brief_presentation>img{
@@ -76,7 +78,6 @@ nav{
 	color: var(--strong_pink);
 }
 .brief_presentation>h1{
-	font-size: 1em;
 	grid-column: 1/3;
 	grid-row: 2/3;
 	justify-self: center;
@@ -134,23 +135,9 @@ nav{
 	text-align: center;
 	align-self: center;
 }
-.nombre_proyecto1>span,
-.nombre_proyecto2>span,
-.nombre_proyecto3>span{
-	display: none;
-}
 .recent_work>div,
 .recent_work>img{
 	grid-column: 1/2;
-}
-.recent_work>:nth-child(3){
-	grid-row: 2/3;
-}
-.recent_work>:nth-child(5){
-	grid-row: 3/4;
-}
-.recent_work>:nth-child(7){
-	grid-row: 4/5;
 }
 .recent_work>.nombre_proyecto1,
 .recent_work>.nombre_proyecto2,
@@ -160,12 +147,15 @@ nav{
 	justify-content: center;
 	opacity: 50%;
 }
+.recent_work>:nth-child(3),
 .recent_work>.nombre_proyecto1{
 	grid-row: 2/3;
 }
+.recent_work>:nth-child(5),
 .recent_work>.nombre_proyecto2{
 	grid-row: 3/4;
 }
+.recent_work>:nth-child(7),
 .recent_work>.nombre_proyecto3{
 	grid-row: 4/5;
 }
@@ -187,10 +177,11 @@ footer{
 		justify-self: center;
 		text-align: center;
 }
-@media screen and (min-width:421px) {
+}
+@media (min-width:481px) {
 
 }
-@media screen and (min-width:721px) {
+@media (min-width:769px) {
 	.full_logo{
 		display:block;
 		max-width: 300px;
@@ -216,13 +207,51 @@ footer{
 		border-bottom-left-radius: 300px;
 		display:grid;
 		grid-template-columns: 40% 60%;
-		grid-template-rows: 30% 40% 30%;
+		grid-template-rows: 30% 40% 20%;
 		margin-left: 10%;
-		
 	}
 	.brief_presentation>img{
-		min-width: 300px;
+		max-width: 250px;
 		grid-column: 1/2;
 		align-self: center;
 	}
+	.brief_presentation>h1{
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+	.brief_presentation>p{
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+	.brief_presentation>div{
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
+	.recent_work{
+		justify-items: center;
+		grid-template-rows: 3em 250px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+	.recent_work>:not(:first-child){
+		min-width: 250px;
+		max-width: 250px;
+		grid-row: 2/3;
+	}
+	.recent_work>h1{
+		grid-column: 1/4;
+	}
+	.recent_work>:nth-child(3),
+	.recent_work>.nombre_proyecto1{
+		grid-column: 1/2;
+	}
+	.recent_work>:nth-child(5),
+	.recent_work>.nombre_proyecto2{
+		grid-column: 2/3;
+	}
+	.recent_work>:nth-child(7),
+	.recent_work>.nombre_proyecto3{
+		grid-column: 3/4;
+	}	
 }
