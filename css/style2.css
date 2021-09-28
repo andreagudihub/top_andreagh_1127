@@ -227,7 +227,13 @@ footer{
 		grid-column: 2/3;
 		grid-row: 3/4;
 	}
-
+	.small_button{
+		width: 10em;
+		height: 3em;
+	}
+	.small_button>a{
+		font-size: 1.5em;
+	}
 	.recent_work{
 		justify-items: center;
 		grid-template-rows: 3em 250px;
