@@ -14,7 +14,7 @@
 body{
 	font-family: 'Josefin Sans', sans-serif;
 }
-h1,h2,h3,h4{
+h1,h2,h3,h4,h5{
 	font-family: 'Yeseva One', cursive;
 }
 header{
@@ -143,6 +143,7 @@ nav{
 .recent_work>img{
 	grid-column: 1/2;
 }
+
 .recent_work>.nombre_proyecto1,
 .recent_work>.nombre_proyecto2,
 .recent_work>.nombre_proyecto3{
@@ -168,6 +169,10 @@ nav{
 .recent_work>.nombre_proyecto3:hover{
 	display: none;
 }
+.abcrutinas481,.abcrutinas481hover{
+	display: none;
+}
+
 /*about.html styles*/
 .sobre_mi{
 	background-color: var(--light_pink)	;
@@ -197,6 +202,21 @@ nav{
 .foto_sobremi>:nth-child(1),
 .foto_sobremi>:nth-child(2){
 	display: none;
+}
+/*Formulario*/
+.form-select>option{
+	color:black;
+}
+.form_h5{
+	background-color: var(--strong_pink);
+	border-radius: 10px;
+	padding:2%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.form_h5>h5{
+	color: var(--light_pink);
+	text-align: center;
 }
 footer{
 		background-color: var(--light_pink);
