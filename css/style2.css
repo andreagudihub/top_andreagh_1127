@@ -188,6 +188,7 @@ nav{
 	justify-self: center;
 
 }
+/*Animacion*/
 .project_title>h1{
 	text-align: center; 
 	animation: pulso linear 6s infinite;
@@ -381,10 +382,11 @@ footer{
 	}
 	.brief_presentation>h1,
 	.brief_presentation>p{
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.brief_presentation>img{
-		max-width: 300px;
+		max-width: 350px;
+		border-radius: 200px;
 		grid-column: 1/2;
 		align-self: center;
 	}
