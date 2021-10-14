@@ -119,6 +119,32 @@ nav{
 .small_button:hover{
 	background-color: var(--soft_color);
 }
+/*boton grande*/
+.large_button_container{
+	display: flex;
+	justify-content: center;
+}
+.large_button{
+	background-color: var(--strong_pink);
+	border-radius: 8px;
+	box-sizing: border-box;
+	width: 15em;
+	height: 3em;
+	justify-self: center;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+}
+.large_button>a,
+.large_button>a:visited{
+	color: var(--light_pink);
+	text-decoration: none;
+	align-self: center;
+}
+.large_button:hover{
+	background-color: var(--soft_color);
+}
 /*Banner para dividir secciones*/
 .quote_banner{
 	background-color: var(--strong_pink);
@@ -174,20 +200,7 @@ nav{
 .abcrutinas481,.abcrutinas481hover{
 	display: none;
 }
-.links_to_projects{
-	display: grid;
-	justify-content: center;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 1em;
-	margin: 1em;
-}
-.links_to_projects>a{
-	font-size: 1.5em;
-	color: var(--strong_pink);
-	text-decoration: none;
-	justify-self: center;
 
-}
 /*Animacion*/
 .project_title>h1{
 	text-align: center; 
