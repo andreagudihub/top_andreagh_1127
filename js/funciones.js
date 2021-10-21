@@ -11,9 +11,7 @@ let headerFooter=`
 					<li><a href="index.html">Inicio</a></li>
 					<li><a href="about.html">¿Quién soy?</a></li>
 					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="">Packs</a></li>
-					<li><a href="contact_form.html">Contacto</a></li>
-					<li><a href="">FAQ's</a></li>
+					<li><a href="presupuesto_form.html">Presupuesto</a></li>
 					</ul>
 				</div>
 		</div>
